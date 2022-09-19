@@ -13,11 +13,11 @@ void print_rev(char *str)
 
 	while (count >= 0)
 	{
-		if (s[count] == '\0')
+		if (str[count] == '\0')
 			break;
 		count++;
 	}
 	for (count--; count >= 0; count--)
-		_putchar(s[count]);
-	_putchar('\n');
+		putchar(str[count]);
+	putchar('\n');
 }
