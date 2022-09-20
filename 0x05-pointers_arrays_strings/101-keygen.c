@@ -30,7 +30,7 @@ int main(void)
 			{
 				p[a] = w[b];
 				s += w[b];
-				a++
+				a++;
 				break;
 			}
 			b++;
