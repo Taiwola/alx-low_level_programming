@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates one string to another
+ * _strncat - concatenates two strings
  * @dest: destination string
- * @src: source
- * Return: dest
+ * @n: number of bytes of string to concatenates
+ * Return: result
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
@@ -19,11 +19,11 @@ char *_strcat(char *dest, char *src)
 		i++;
 	}
 
-	while (src[j] != '\0')
+	while (src[j] != '\0' && j < n)
 	{
 		dest[i] = src[j];
-		j++;
 		i++;
+		j++;
 	}
 
 	dest[i] = '\0';
