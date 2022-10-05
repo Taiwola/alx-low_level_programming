@@ -6,7 +6,7 @@
  * create_array - creates an array of chars
  * @size: size of the array
  * @c: character
- * @Return: return NULL if either size is zero or fails
+ * Return: return NULL if either size is zero or fails
  */
 
 char *create_array(unsigned int size, char c);
