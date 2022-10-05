@@ -20,7 +20,7 @@ int **alloc_grid(int col, int rows)
 	if (rows < 1 || col < 1 || grid == 0)
 		return (NULL);
 
-	for (i = 0; i < row; i++)
+	for (i = 0; i < rows; i++)
 	{
 		grid[i] = malloc(col * sizeof(**grid));
 		if (grid[i] == 0)
